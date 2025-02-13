@@ -29,12 +29,13 @@ body {
 .container {
   display: grid;
   width: 90%;
-  max-width: 1200px;
+  overflow: hidden;
   gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .achievements {
-  width: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
 }
@@ -86,10 +87,73 @@ body {
     width: 200px;
     object-fit: contain;
   }
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "grid-7 grid-1 grid-4 "
+      "grid-7 grid-1 grid-4 "
+      "grid-2 grid-3 grid-4 "
+      "grid-8 grid-6 grid-5 ";
+  }
+
+  .grid-col-1 {
+    grid-area: grid-1;
+  }
+  .grid-col-2 {
+    grid-area: grid-2;
+  }
+  .grid-col-3 {
+    grid-area: grid-3;
+  }
+  .grid-col-4 {
+    grid-area: grid-4;
+  }
+  .grid-col-5 {
+    grid-area: grid-5;
+  }
+  .grid-col-6 {
+    grid-area: grid-6;
+  }
+  .grid-col-7 {
+    grid-area: grid-7;
+  }
+  .grid-col-8 {
+    grid-area: grid-8;
+  }
 }
 @media (min-width: 1024px) {
   .container {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "grid-7 grid-1 grid-1 grid-4"
+      "grid-7 grid-2 grid-3 grid-4"
+      "grid-8 grid-2 grid-3 grid-4"
+      "grid-8 grid-6 grid-5 grid-5";
+  }
+
+  .grid-col-1 {
+    grid-area: grid-1;
+  }
+  .grid-col-2 {
+    grid-area: grid-2;
+  }
+  .grid-col-3 {
+    grid-area: grid-3;
+  }
+  .grid-col-4 {
+    grid-area: grid-4;
+  }
+  .grid-col-5 {
+    grid-area: grid-5;
+  }
+  .grid-col-6 {
+    grid-area: grid-6;
+  }
+  .grid-col-7 {
+    grid-area: grid-7;
+  }
+  .grid-col-8 {
+    grid-area: grid-8;
   }
 }
 
