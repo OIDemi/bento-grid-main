@@ -194,7 +194,7 @@ img {
   }
   .followers {
     grid-area: followers;
-    display: flex;
+    flex-direction: row;
     align-items: center;
     text-align: start;
   }
