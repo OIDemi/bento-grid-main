@@ -11,111 +11,85 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Frontend Mentor | Bento grid</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <main class="container">
-      <article class="achievements grid-col-1 grid-cols">
-        <div>
-          <div class="img-container">
-            <p class="heading-cols-1 text-cols-1 font-weight-500">
-              Social Media <span>10x</span> <i>Faster</i> with AI
-            </p>
-            <img
-              src="./assets/images/illustration-five-stars.webp"
-              alt="five-stars"
-            />
-          </div>
-          <p class="text-cols-1">Over 4,000 5-star reviews</p>
-        </div>
+    <main class="grid-container">
+      <article class="grid-items social">
+        <p class="lg-text">
+          Social Media <span class="text-yellow">10x </span><em>Faster</em> with
+          AI
+        </p>
+        <img
+          src="./assets/images/illustration-five-stars.webp"
+          alt="illustration-five-stars"
+        />
+        <p class="sm-text">Over 4,000 5-star reviews</p>
       </article>
-      <article class="achievements grid-col-2 grid-cols">
-        <div>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-multiple-platforms.webp"
-              alt="multiple-platforms"
-            />
-          </div>
-          <p class="font-weight-500">Manage multiple accounts and platforms.</p>
-        </div>
+      <article class="grid-items manage">
+        <img
+          src="./assets/images/illustration-multiple-platforms.webp"
+          alt="illustration-multiple-platforms"
+        />
+        <p class="md-text">Manage multiple accounts and platforms.</p>
       </article>
-      <article class="achievements grid-col-3 grid-cols">
-        <div>
-          <p class="font-weight-500">
-            Maintaing a consistent posting schedule.
-          </p>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-consistent-schedule.webp"
-              alt="illustration-consistent-schedule"
-            />
-          </div>
-        </div>
+      <article class="grid-items posting">
+        <p class="md-text">Maintain a consistent posting schedule.</p>
+        <img
+          src="./assets/images/illustration-consistent-schedule.webp"
+          alt="illustration-consistent-schedule"
+        />
       </article>
-      <article class="achievements grid-col-4 grid-cols">
-        <div>
-          <p class="font-weight-500">Schedule to social media.</p>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-schedule-posts.webp"
-              alt="illustration-schedule-posts"
-            />
-            <p>
-              Optimize post timings to publish content at the perfect time for
-              your audience.
-            </p>
-          </div>
-        </div>
+      <article class="grid-items schedule">
+        <p class="md-text">Schedule to social media.</p>
+        <img
+          src="./assets/images/illustration-schedule-posts.webp"
+          alt="illustration-schedule-posts"
+        />
+        <p class="sm-text">
+          Optimize your things to publish content at the perfect time for your
+          audience.
+        </p>
       </article>
-      <article class="achievements grid-col-5 grid-cols">
-        <div>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-grow-followers.webp"
-              alt="illustration-grow-followers"
-            />
-            <p class="font-weight-500">Grow followers with non-stop content.</p>
-          </div>
-        </div>
+      <article class="grid-items followers">
+        <img
+          src="./assets/images/illustration-grow-followers.webp"
+          alt="illustration-grow-followers"
+        />
+        <p class="md-text">Grow followers with non-stop content.</p>
       </article>
-      <article class="achievements grid-col-6 grid-cols">
-        <div>
-          <p>>56% faster audience growth</p>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-audience-growth.webp"
-              alt="illustration-audience-growth"
-            />
-          </div>
-        </div>
+      <article class="grid-items audience">
+        <p class="lg-text">>56% <span>faster audience growth</span></p>
+
+        <img
+          src="./assets/images/illustration-audience-growth.webp"
+          alt="illustration-audience-growth"
+        />
       </article>
-      <article class="achievements grid-col-7 grid-cols">
-        <div>
-          <p class="font-weight-500">
-            Create and schedule content <i>quicker.</i>
-          </p>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-create-post.webp"
-              alt="illustration-create-post"
-            />
-          </div>
-        </div>
+      <article class="grid-items create">
+        <p class="md-text">
+          Create and schedule content <em class="text-purple">quicker.</em>
+        </p>
+        <img
+          src="./assets/images/illustration-create-post.webp"
+          alt="illustration-create-post"
+        />
       </article>
-      <article class="achievements grid-col-8 grid-cols">
-        <div>
-          <p class="font-weight-500">Write your content using AI.</p>
-          <div class="img-container">
-            <img
-              src="./assets/images/illustration-ai-content.webp"
-              alt="illustration-ai-content"
-            />
-          </div>
-        </div>
+      <article class="grid-items content">
+        <p class="md-text">Write your content using AI.</p>
+        <img
+          src="./assets/images/illustration-ai-content.webp"
+          alt="illustration-ai-content"
+        />
       </article>
     </main>
   </body>
